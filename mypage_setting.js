@@ -1,3 +1,10 @@
+const imgUpload = document.querySelector('.img_upload');
+const imgChoose = document.querySelector('#imgUpload');
+
+imgUpload.addEventListener('click',()=>{
+	imgChoose.click();
+});
+
 function mod() {
     info.style.visibility = 'hidden';
     modify.style.visibility = 'visible';
