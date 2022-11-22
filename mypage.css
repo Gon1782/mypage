@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    background-color: rgb(89, 100, 217);
+}
+
 .box {
     width: 768px;
     margin-left: auto;
@@ -17,17 +22,18 @@
 .profile_info {
     display: flex;
     flex-direction: column;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 .profile img {
     display: block;
-    width: 8rem;
-    height: 8rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
     object-fit: cover;
     box-shadow: rgb(0 0 0 / 6%) 0px 0px 4px 0px;
 }
 .profile_setting a {
-    color: rgb(0 0 0 / 40%);
+    color: black;
     text-decoration: none;
 }
 .name {
@@ -40,9 +46,9 @@
     margin-top: .5rem;
 }
 .underline{
-    background: gray;
+    background: black;
     width: 100%;
-    height: 1px;
+    height: 2px;
     margin-top: 2.5rem;
     margin-bottom: 2rem;
 }
@@ -69,13 +75,152 @@
     font-weight: 600;
 }
 .mypost.active{
-    color: green;
+    color: white;
 }
 .tab_underline{
     width: 10rem;
     height: 2px;
-    background: green;
+    background: white;
     position: absolute;
     bottom: -2px;
     transition: left 0.25s ease-in-out 0s;
+}
+/* 프로필 설정 */
+.box_profile {
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 768px;
+    padding-bottom: 5rem;
+}
+.profile_setting_box{
+    display: flex;
+    flex-direction: column;
+}
+.profile_img_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile_img_area img {
+    display: block;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: rgb(0 0 0 / 6%) 0px 0px 4px 0px;
+    margin-bottom: 2rem;
+}
+.profile_img_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile_img_btn button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 1rem;
+    height: 3rem;
+    font-size: 1rem;
+    padding: .5rem 1.5rem;
+    transition: background-color 0.3s ease-in-out 0s;
+}
+.profile_img_btn button:hover {
+    background-color: green;
+    color: white;
+}
+.img_remove{
+    margin-left: 2rem;
+}
+.profile_info_area{
+    position: relative;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    flex: 1 1 0%;
+    border-top: 1px solid rgb(0 0 0 / 6%);
+}
+.info {
+    position: absolute;
+    width: 44rem;
+}
+.profile_info_area .username {
+    font-size: 2.25rem;
+    margin: 0px;
+    line-height: 1.5;
+}
+.profile_info_area p {
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+.modify_button {
+        display: flex;
+        margin-top: 1.5rem;
+        justify-content: flex-end;
+}
+.modify {
+    outline: none;
+    padding: 0px 1.25rem;
+    border: none;
+    display: inline;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: green;
+    text-decoration: underline;
+    background: none;
+    cursor: pointer;
+    height: 2.5rem;
+}
+.profile_info_area button:hover {
+    color: red;
+}
+.profile_text {
+    display: block;
+    border: 1px solid rgb(0 0 0 / 6%);;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    outline: none;
+    border-radius: 1rem;
+    color: #868E96;
+    width: 100%;
+}
+.profile_text.display_name{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 44rem;
+}
+.profile_text.info{
+    color: black;
+    margin-top: 1rem;
+    width: 44rem;
+}
+.save_button {
+    display: flex;
+    margin-top: 4rem;
+    justify-content: flex-end;
+}
+.save {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: green;
+    color: white;
+    border-radius: 4px;
+    padding: 0px 1.25rem;
+    height: 2rem;
+    font-size: 1rem;
 }

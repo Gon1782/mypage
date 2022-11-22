@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile_setting</title>
+    <link rel="stylesheet" href="mypage.css">
+</head>
+<body>
+    <div class="box_profile">
+        <div class="profile_setting_box">
+            <div class="profile_img_area">
+                <img src="empty_profile.png" alt="profile">
+            </div>
+            <div class="profile_img_btn">
+                <button class="img_upload">이미지 업로드</button>
+                <button class="img_remove">이미지 제거</button>
+            </div>
+            <div class="profile_info_area" >
+                <div id="info" class="info" style="visibility: visible;">
+                    <div id ="username" class="username">이름</div>
+                    <p id ="userintroduce">소개가 들어갑니다.</p>
+                    <div class="modify_button">
+                        <button class="modify" onclick="mod()">수정</button>
+                    </div>
+                </div>
+                <form id="modify" class="profile_modify" style="visibility: hidden;">
+                    <input placeholder="이름" id="urnameinput" class="profile_text display_name">
+                    <input placeholder="소개" id="urintroduceinput" class="profile_text info">
+                    <div class="save_button">
+                        <button class="save" type="button" onclick="save()">저장</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="mypage_setting.js"></script>
+</body>
+</html>
